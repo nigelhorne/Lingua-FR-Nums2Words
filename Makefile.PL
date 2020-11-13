@@ -4,6 +4,9 @@ WriteMakefile(
 	AUTHOR		=> q{Nigel Horne <njh@bandsman.co.uk>},
     NAME              => 'Lingua::FR::Nums2Words',
     VERSION_FROM      => 'lib/Lingua/FR/Nums2Words.pm',
+	TEST_REQUIRES => {
+		'Test::Most' => 0,
+	},
     PREREQ_PM         => {},
 	ABSTRACT_FROM	   => 'lib/Lingua/FR/Nums2Words.pm',
        # AUTHOR         => 'Fabien POTENCIER <fabpot@cpan.org>') : ()),
