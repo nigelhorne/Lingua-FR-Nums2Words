@@ -13,7 +13,7 @@ use vars qw(@ISA %EXPORT_TAGS @EXPORT_OK $VERSION);
 
 @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-$VERSION = '1.00';
+our $VERSION = '1.01';
 
 my @major = (
 	"",
