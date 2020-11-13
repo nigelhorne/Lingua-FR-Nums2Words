@@ -196,6 +196,46 @@ Fabien POTENCIER, E<lt>fabpot@cpan.orgE<gt>
 
 Maintained by Nigel Horne, C<< <njh at bandsman.co.uk> >>
 
+=head1 SEE ALSO
+
+L<Lingua::FR::Numbers>
+
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc Lingua::FR::Nums2Words
+
+You can also look for information at:
+
+=over 4
+
+=item * MetaCPAN
+
+L<https://metacpan.org/release/Lingua-FR-Nums2Words>
+
+=item * RT: CPAN's request tracker
+
+L<https://rt.cpan.org/NoAuth/Bugs.html?Dist=Lingua-FR-Nums2Words>
+
+=item * CPANTS
+
+L<http://cpants.cpanauthors.org/dist/Lingua-FR-Nums2Words>
+
+=item * CPAN Testers' Matrix
+
+L<http://matrix.cpantesters.org/?dist=Lingua-FR-Nums2Words>
+
+=item * CPAN Ratings
+
+L<http://cpanratings.perl.org/d/Lingua-FR-Nums2Words>
+
+=item * CPAN Testers Dependencies
+
+L<http://deps.cpantesters.org/?module=Lingua::FR::Nums2Words>
+
+=back
+
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (c) 2004 by Fabien POTENCIER
@@ -204,4 +244,7 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,
 at your option, any later version of Perl 5 you may have available.
 
+
 =cut
+
+1;
