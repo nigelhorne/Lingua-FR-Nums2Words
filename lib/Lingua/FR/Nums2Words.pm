@@ -1,5 +1,15 @@
 package Lingua::FR::Nums2Words;
 
+=head1 NAME
+
+Lingua::FR::Nums2Words - Converts numbers to French words
+
+=head1 VERSION
+
+Version 1.01
+
+=cut
+
 use strict;
 use warnings;
 use Exporter;
@@ -60,6 +70,12 @@ my @num = (
 	" dix-huit",
 	" dix-neuf"
 );
+
+=head2 num2word
+
+Given a number, or array of numbers, returns their equivalent in French.
+
+=cut
 
 sub num2word {
 	my @numbers = wantarray ? @_ : shift;
@@ -170,10 +186,6 @@ sub _trim {
 1;
 
 __END__
-
-=head1 NAME
-
-Lingua::FR::Nums2Words - Converts numbers to French words
 
 =head1 SYNOPSIS
 
