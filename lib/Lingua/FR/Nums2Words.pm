@@ -1,8 +1,17 @@
 package Lingua::FR::Nums2Words;
 
+use strict;
+use warnings;
+use Exporter;
+use vars qw(@ISA %EXPORT_TAGS @EXPORT_OK $VERSION);
+
 =head1 NAME
 
 Lingua::FR::Nums2Words - Converts numbers to French words
+
+=head1 DESCRIPTION
+
+Nums2Words converts numbers to French words.
 
 =head1 VERSION
 
@@ -10,10 +19,20 @@ Version 1.01
 
 =cut
 
-use strict;
-use warnings;
-use Exporter;
-use vars qw(@ISA %EXPORT_TAGS @EXPORT_OK $VERSION);
+our $VERSION = '1.01';
+
+=head1 SYNOPSIS
+
+  use Lingua::FR::Nums2Words;
+
+  $result = num2word(5);
+  # $result now holds 'cinq'
+
+  @results = num2word(1, -2, 10, 100, 1000, 9999);
+  # @results now holds ('un', 'moins deux', 'dix', 'cent', 'mil',
+  #                     'neuf mille neuf cent quatre-vingt-dix neuf')
+
+=cut
 
 @ISA = qw(Exporter);
 
@@ -22,8 +41,6 @@ use vars qw(@ISA %EXPORT_TAGS @EXPORT_OK $VERSION);
 ) ] );
 
 @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
-
-our $VERSION = '1.01';
 
 my @major = (
 	"",
@@ -186,21 +203,6 @@ sub _trim {
 1;
 
 __END__
-
-=head1 SYNOPSIS
-
-  use Lingua::FR::Nums2Words;
-
-  $result = num2word(5);
-  # $result now holds 'cinq'
-
-  @results = num2word(1, -2, 10, 100, 1000, 9999);
-  # @results now holds ('un', 'moins deux', 'dix', 'cent', 'mil',
-  #                     'neuf mille neuf cent quatre-vingt-dix neuf')
-
-=head1 DESCRIPTION
-
-Nums2Words converts numbers to French words.
 
 =head1 AUTHOR
 

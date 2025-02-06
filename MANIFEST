@@ -6,6 +6,7 @@ MANIFEST.SKIP
 META.yml			Module meta-data (added by MakeMaker)
 README
 README.md
+t/30-basics.t
 t/coverage.t
 t/Lingua-FR-Nums2Words.t
 t/links.t
