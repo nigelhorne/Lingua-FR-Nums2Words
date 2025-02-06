@@ -238,10 +238,6 @@ L<http://cpants.cpanauthors.org/dist/Lingua-FR-Nums2Words>
 
 L<http://matrix.cpantesters.org/?dist=Lingua-FR-Nums2Words>
 
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Lingua-FR-Nums2Words>
-
 =item * CPAN Testers Dependencies
 
 L<http://deps.cpantesters.org/?module=Lingua::FR::Nums2Words>

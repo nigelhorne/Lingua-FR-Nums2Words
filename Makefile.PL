@@ -1,13 +1,25 @@
 use ExtUtils::MakeMaker;
 
+my $dist = {
+	COMPRESS => 'gzip -9f',	# Compress tarball using gzip
+	SUFFIX => 'gz',	# File suffix for tarball
+};
+
+if($^O eq 'darwin') {
+	$dist->{'TAR'} = 'gtar';
+}
+
 WriteMakefile(
 	AUTHOR		=> q{Nigel Horne <njh@bandsman.co.uk>},
     NAME              => 'Lingua::FR::Nums2Words',
     VERSION_FROM      => 'lib/Lingua/FR/Nums2Words.pm',
 	TEST_REQUIRES => {
+		'Test::DescribeMe' => 0,
 		'Test::Most' => 0,
+		'Test::Needs' => 0,
+	}, PREREQ_PM => {
+		'ExtUtils::MakeMaker' => 6.64,	# Minimum version for TEST_REQUIRES
 	},
-    PREREQ_PM         => {},
 	ABSTRACT_FROM	   => 'lib/Lingua/FR/Nums2Words.pm',
        # AUTHOR         => 'Fabien POTENCIER <fabpot@cpan.org>') : ()),
 	META_MERGE		=> {

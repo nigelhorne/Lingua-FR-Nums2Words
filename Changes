@@ -1,5 +1,9 @@
 Revision history for Perl extension Lingua::FR::Nums2Words.
 
+1.02
+	Use Test::Needs
+	Use Test::DescribeMe to simplify tests
+
 1.01	Fri Nov 13 17:29:20 EST 2020
 	RT#104988
 	No other changes to the code, new maintainer - thanks to FABPOT and NEILB
